@@ -1,36 +1,41 @@
 section.boxes
   .big-carousel
     .big-carousel_item
-      img.item-img(src="img/Pages.png")
-      .item-wrapper
-        h2.item-wrapper_h2 Documents
-        p.item-wrapper_p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin
+      .big-carousel_wrap
+        img.item-img(src="img/Pages.png")
+        .item-wrapper
+          h2.item-wrapper_h2 Documents
+          p.item-wrapper_p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin
     .big-carousel_item
-      img.item-img(src="img/Camera.png")
-      .item-wrapper
-        h2.item-wrapper_h2 Documents
-        p.item-wrapper_p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin
+      .big-carousel_wrap
+        img.item-img(src="img/Camera.png")
+        .item-wrapper
+          h2.item-wrapper_h2 Photos
+          p.item-wrapper_p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin
     .big-carousel_item
-      img.item-img(src="img/Pages.png")
-      .item-wrapper
-        h2.item-wrapper_h2 Documents
-        p.item-wrapper_p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin
+      .big-carousel_wrap
+        img.item-img(src="img/Pages.png")
+        .item-wrapper
+          h2.item-wrapper_h2 Documents
+          p.item-wrapper_p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin
     .big-carousel_item
-      img.item-img(src="img/Camera.png")
-      .item-wrapper
-        h2.item-wrapper_h2 Documents
-        p.item-wrapper_p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin
+      .big-carousel_wrap
+        img.item-img(src="img/Camera.png")
+        .item-wrapper
+          h2.item-wrapper_h2 Photos
+          p.item-wrapper_p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin
     .big-carousel_item
-      img.item-img(src="img/Pages.png")
-      .item-wrapper
-        h2.item-wrapper_h2 Documents
-        p.item-wrapper_p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin
+      .big-carousel_wrap
+        img.item-img(src="img/Pages.png")
+        .item-wrapper
+          h2.item-wrapper_h2 Documents
+          p.item-wrapper_p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin
     .big-carousel_item
-      img.item-img(src="img/Camera.png")
-      .item-wrapper
-        h2.item-wrapper_h2 Documents
-        p.item-wrapper_p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin
-
+      .big-carousel_wrap
+        img.item-img(src="img/Camera.png")
+        .item-wrapper
+          h2.item-wrapper_h2 Photos
+          p.item-wrapper_p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin
 section.green
   .green-light
     img.green-light_img(src="img/device.png")
@@ -44,6 +49,21 @@ section.green
       img(src="img/laptop.png").green-darken_img
     .green-darken_wrapper
       .green-light_h2 This is a Heading
-      .green-light_p.green-light_p--offset This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris.
       .green-light_p Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non  mauris vitae erat consequat auctor eu in elit. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Mauris in erat justo. Nullam ac urna eu felis dapibus condimentum sit amet a augue. Sed non neque elit. Sed ut imperdiet nisi. Proin condimentum fermentum nunc. Etiam pharetra, erat sed fermentum feugiat, velit mauris egestas quam, ut aliquam massa nisl quis neque. Suspendisse in orci enim.
-section
+      button.green-darken_btn Download
+section.map
+  #js-map
+  form.feedback#js-feedback(role="form")
+    //label(for="js-name") Name (required, at least 2 characters)
+    input(id="name" name="name" type="text" placeholder="Name").feedback_name
+    //label(for="js-email") E-Mail (required)
+    input(id="email" type="email" name="email" placeholder="email address").feedback_email
+    //label(for="js-comment") Your comment (required)
+    textarea(id="comment" placeholder="Message" name="comment").feedback_textarea
+    button(type="submit").feedback_btn
+      <?xml version="1.0" encoding="utf-8"?>
+      <svg version="1.1" id="check" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 426.67 426.67" style="enable-background:new 0 0 426.67 426.67;" xml:space="preserve">
+      <path d="M153.504,366.839c-8.657,0-17.323-3.302-23.927-9.911L9.914,237.265      c-13.218-13.218-13.218-34.645,0-47.863c13.218-13.218,34.645-13.218,47.863,0l95.727,95.727l215.39-215.386c13.218-13.214,34.65-13.218,47.859,0c13.222,13.218,13.222,34.65,0,47.863L177.436,356.928C170.827,363.533,162.165,366.839,153.504,366.839z"/>
+      <g>  </g>  <g>  </g>  <g>  </g>  <g>  </g>  <g>  </g>  <g>  </g>  <g>  </g>  <g>  </g>  <g>  </g>  <g>  </g>  <g>  </g>  <g>  </g>  <g>  </g>  <g>  </g>  <g>  </g>  </svg>
+footer.footer
+  p.footer_p © Copyright 2013 Css Author, All Rights Reserved.

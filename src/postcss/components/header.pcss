@@ -27,6 +27,10 @@
   text-transform: uppercase;
   margin-top: 78px;
   font-weight: 600;
+
+  @media screen and (width <= 768px) {
+    font-size: 32px;
+  }
 }
 
 .circle {
@@ -60,7 +64,6 @@
   &_code {
     margin: auto;
     display: block;
-    margin-bottom: 24px;
     width: 264px;
     height: 36px;
     background-color: #ffffff;
@@ -135,10 +138,23 @@
     margin: auto;
     display: block;
     border-radius: 2px;
+    cursor: pointer;
+    transition: all .3s linear;
+
+    &:hover {
+      background-color: color(#227dd3 blackness(50%));
+    }
+
+    &:active {
+      background-color: color(#227dd3 blackness(80%));
+    }
   }
 }
 
 .carousel {
+  &--top {
+    margin-top: 24px;
+  }
 
   &--offset {
     margin-bottom: 27px;
