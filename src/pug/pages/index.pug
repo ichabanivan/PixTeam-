@@ -8,25 +8,24 @@ block description
   meta(name='Website', content='Be sure you put your feet in the right place')
 
 block color
-  +color('#17bf00')
+  +color('#43a06d')
 
 block styles
   link(href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet")
   link(rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.css")
-  link(rel="stylesheet" href="css/libs.css")
   link(rel="stylesheet" href="css/main.css")
 
 
 block js
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
-  //<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-  //<script type="text/javascript" src="slick/slick.min.js"></script>
   script(type="text/javascript" src="//cdn.jsdelivr.net/jquery.slick/1.6.0/slick.min.js")
   script(src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB-nT7oOrQvpqoR9xilR1kQl3_HGRMSToo&callback=initMap")
   script(src="https://cdn.jsdelivr.net/jquery.validation/1.16.0/jquery.validate.min.js")
-  //script(defer src="js/commons.js")
   script(defer src="js/index.js")
 
 block content
   include ../components/header
-  include ../components/main
+  include ../components/boxes
+  include ../components/green
+  include ../components/map
+  include ../components/footer

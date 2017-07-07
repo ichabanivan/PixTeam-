@@ -1,0 +1,140 @@
+.green {
+  background-color: #44a36f;
+
+  &-light {
+    background-color: #5fc18b;
+    height: 100%;
+    padding-top: 86px;
+
+    &_img {
+      width: 505px;
+      display: block;
+      margin: auto;
+      transform: translateX(-176px);
+      position: relative;
+      z-index: 1;
+      margin-bottom: -333px;
+    }
+
+    &_wrapper {
+      position: relative;
+      z-index: 2;
+      width: 100%;
+      max-width: 648px;
+      margin: auto;
+    }
+
+    &_h2 {
+      font-family: var(--default-font);
+      font-size: 39.4px;
+      font-weight: 600;
+      line-height: 1.58;
+      text-align: center;
+      color: #ffffff;
+      margin-bottom: 36px;
+    }
+
+    &_p {
+      font-family: var(--default-font);
+      font-size: 14px;
+      line-height: 1.64;
+      text-align: left;
+      color: #ffffff;
+
+      @media screen and (width <= 768px) {
+        padding-left: 20px;
+        padding-right: 20px;
+      }
+
+      &--offset {
+        margin-bottom: 58px;
+      }
+    }
+  }
+
+  &-transition{
+    width: 100%;
+    height: auto;
+    margin-bottom: -8px;
+  }
+
+  &-darken {
+    height: 100%;
+    position: relative;
+    z-index: 3;
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    max-width: 852px;
+
+    &_wrapper {
+      max-width: 578px;
+      padding-left: 65px;
+      position: relative;
+      z-index: 3;
+      margin: auto;
+      display: block;
+
+      @media screen and (width <= 993px) {
+        padding-left: 0;
+      }
+    }
+
+    &_img {
+      z-index: 2;
+      position: relative;
+
+    }
+
+    &_img-wrap {
+      position: relative;
+      margin: auto;
+      display: block;
+      margin-top: 30px;
+
+      &:after {
+        content: "";
+        display: block;
+        width: width('shadow.png');
+        height: height('shadow.png');
+        background: resolve('shadow.png');
+        position: absolute;
+        top: 0;
+        right: 0;
+        z-index: 1;
+      }
+    }
+
+    &_btn {
+      width: 196px;
+      height: 51px;
+      border-radius: 5px;
+      border: solid 3px #ffffff;
+      font-family: var(--default-font);
+      font-size: 27.4px;
+      font-weight: 600;
+      text-align: center;
+      color: #ffffff;
+      background-color: transparent;
+      margin-top: 45px;
+      margin-bottom: 135px;
+      cursor: pointer;
+      transition: all .3s linear;
+
+      &:hover {
+        background-color: #ffffff;
+        color: #44a36f;
+      }
+
+      &:active {
+        background-color: #ffffff;
+        color: color(#44a36f blackness(80%));
+      }
+
+      @media screen and (width <= 768px) {
+        display: block;
+        margin: * auto;
+      }
+    }
+  }
+}

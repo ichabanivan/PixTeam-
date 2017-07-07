@@ -1,0 +1,12 @@
+section.boxes
+  .big-carousel#js-big-carousel
+    each val in ['Documents', 'Photos', 'Documents', 'Photos', 'Documents', 'Photos']
+      .big-carousel_item
+        .big-carousel_wrap
+          if val === 'Documents'
+            img.item-img(src="img/Pages.png")
+          else
+            img.item-img(src="img/Camera.png")
+          .item-wrapper
+            h2.item-wrapper_h2= val
+            p.item-wrapper_p This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin

@@ -1,0 +1,101 @@
+.boxes {
+  height: 100%;
+  background-color: #fff;
+  max-width: 884px;
+  width: 100%;
+  margin: auto;
+}
+
+.big-carousel_wrap {
+  @media screen and (width <= 992px) {
+    display: block;
+    margin: auto;
+    max-width: 458px;
+    width: 100%;
+  }
+}
+
+.slick-dots {
+  padding: 0;
+  list-style: none;
+  display: block;
+  width: 122px;
+  margin: auto;
+  margin-top: 52px;
+  padding-bottom: 40px;
+
+  & li {
+    float: left;
+    padding-left: 37px;
+
+    @media screen and (width <= 992px) {
+      padding-left: 5px;
+    }
+
+    &:first-child {
+      padding-left: 0;
+    }
+  }
+
+  & li button {
+    width: 16px;
+    height: 16px;
+    background-color: #d8d8d8;
+    border-radius: 50%;
+    font-size: 0;
+    border: none;
+    cursor: pointer;
+  }
+
+  & li.slick-active button{
+    background-color: var(--main);
+  }
+}
+
+.item-img {
+  float: left;
+
+  @media screen and (width <= 482px) {
+    margin-left: 50%;
+    transform: translateX(-43px);
+  }
+}
+
+.item-wrapper {
+  float: left;
+  width: 340px;
+  padding-left: 20px;
+  padding-right: 72px;
+
+  @media screen and (width <= 482px) {
+    text-align: center;
+    padding: 20px;
+    width: 100%;
+  }
+
+  &_h2 {
+    margin: 0;
+    padding: 0;
+    font-family: var(--default-font);
+    font-size: 27.4px;
+    font-weight: 600;
+    line-height: 2.27;
+    text-align: left;
+    color: #000000;
+    @media screen and (width <= 482px) {
+      text-align: center;
+    }
+  }
+
+  &_p {
+    margin: 0;
+    font-family: var(--default-font);
+    font-size: 14px;
+    line-height: 1.64;
+    text-align: left;
+    color: #4f4e4e;
+    @media screen and (width <= 482px) {
+      text-align: center;
+    }
+  }
+}
