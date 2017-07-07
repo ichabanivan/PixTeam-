@@ -1,29 +1,31 @@
-# Gulpimize
+# Requirements #
 
-<p>
-    <img src="https://raw.githubusercontent.com/zanusilker/cloud/master/gulpimize/gulpimize.png" alt="Basic template for quickly getting started">
-</p>
+1. Use BEM naming for css classes.
+* .block;
+* .block_element;
+* .block_element--modifier;
 
-## Use
+2. Use separate classes for JS
+* .js-script-name - javascript classes;
+* .is-hidden, .is-active, .is-valid - javascript state classes;
 
-```bash
-$ git clone https://github.com/zanusilker/gulpimize
-$ cd gulpimize/ && yarn install
-$ npm run gulp
-```
+3. Using Sass, SCSS, Less, Gulp etc. will be a plus.
 
-Starting a fresh project
-If you plan on using this to start a new project, be sure and clear out the git data start a fresh history:
+4. Responsive layout for all screen sizes from 320px till 1920px (Free design).
 
-```
-rm -rf .git && git init
-git add .
-git commit -m "Initialized with Gulpimize"
-```
+5. First section is a full screen slider. (you can use [slick slider](http://kenwheeler.github.io/slick/)).
 
-## Technologies
+6. Second section is a carousel. (you can use [slick slider](http://kenwheeler.github.io/slick/)).
 
-* Gulp - Automate and enhance your workflow
-* Pug - Terse language for writing HTML templates.
-* PostCSS - CSS with superpowers.
-* Babel - Use next generation JavaScript, today (ES5 => ES6).
+7. Both forms must have a validation. (you can use [validate.js](https://jqueryvalidation.org/)).
+
+8. All buttons must have :hover and :active state.
+
+9. Use Google font service for import fonts.
+
+10. Use [Google Maps JavaScript API](https://developers.google.com/maps/documentation/javascript) for map section
+
+11. Browser compatibility: latest 2 versions for all major browsers + IE11.
+
+12. Use Github repositories to host your result
+
